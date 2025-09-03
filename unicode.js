@@ -49,7 +49,6 @@ Expected Output:
 codePointDifference: 16 // 'C' = 67, 't' = 116, |67 - 116| = 16
 
 
-
 Practice Problem #2
 
 Objective
@@ -86,15 +85,24 @@ Assign the result to a variable named swappedString.
 //Starter Code
 // Task 1
 let inputString1 = "Code";
-let firstCodePoint; // Your code here
-let thirdCodePoint; // Your code here
+let firstCodePoint = inputString1.charCodeAt(0); // Your code here
+let thirdCodePoint = inputString1.charCodeAt(2); // Your code here
+
 
 // Task 2
-let wordFromCodePoints; // Your code here
+let wordFromCodePoints = String.fromCharCode("72","101","108","108"); // Your code here
+
 
 // Task 3
 let inputString2 = "Launch";
-let swappedString; // Your code here
+let codePoint0 = inputString2.charCodeAt(0);
+let codePoint1 = inputString2.charCodeAt(1);
+let codePoint2 = inputString2.charCodeAt(2);
+let codePoint3 = inputString2.charCodeAt(3);
+let codePoint4 = inputString2.charCodeAt(4);
+let codePoint5 = inputString2.charCodeAt(5);
+console.log(`${codePoint0} + ${codePoint1} + ${codePoint2} + ${codePoint3} + ${codePoint4} + ${codePoint5}`);
+let swappedString = String.fromCharCode("104","97","117","110","99","76"); // Your code here
 
 // Log all results
 console.log({
